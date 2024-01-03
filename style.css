@@ -92,9 +92,6 @@ button {
   gap: 20px;
   align-items: center;
   justify-content: center;
-}
-
-.social-media {
   text-decoration: none;
   color: white;
 }
@@ -121,14 +118,20 @@ button:hover {
 @media only screen and (min-width: 1440px) {
   body {
     background-image: url(images/bg-desktop.svg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .container {
     flex-direction: row;
     height: 800px;
+    width: 1440px;
   }
 
   main {
+    position: relative;
     width: 50%;
     text-align: left;
     padding: 30px;
@@ -160,8 +163,9 @@ button:hover {
 
   .social-media {
     position: absolute;
-    top: 720px;
-    left: 550px;
+    top: 680px;
+    left: 450px;
+    width: max-content;
   }
 
   .social-media ion-icon {
